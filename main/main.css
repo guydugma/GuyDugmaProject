@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-size: contain;
+  padding-top: 100px;
+  color: black;
+}
+body > * {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+body section {
+  width: 85vw;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+}
+body section .main {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 70%;
+  width: 60%;
+  align-items: center;
+  border-radius: 1%;
+  padding: 20px;
+  gap: 10%;
+}
+body section .main > * {
+  padding: 10px;
+}
+
+#scrollspyTop #hero {
+  background: none;
+  justify-content: space-around;
+}
+#scrollspyTop #hero .container {
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+  padding: 100px;
+}
+#scrollspyTop #hero .container .row {
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 100px;
+}
+#scrollspyTop #hero .container .row #right-hero,
+#scrollspyTop #hero .container .row #left-hero {
+  min-width: 300px;
+  background-color: white;
+  width: 40%;
+  border-radius: 10px;
+}
+#scrollspyTop #hero .container .row #right-hero {
+  padding: 0;
+}
+#scrollspyTop #hero .container .row #left-hero {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.fancy-text {
+  background-image: url("data:image/svg+xml,%3Csvg width='2250' height='900' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg%3E%3Cpath fill='%2300A080' d='M0 0h2255v899H0z'/%3E%3Ccircle cx='366' cy='207' r='366' fill='%2300FDCF'/%3E%3Ccircle cx='1777.5' cy='318.5' r='477.5' fill='%2300FDCF'/%3E%3Ccircle cx='1215' cy='737' r='366' fill='%23008060'/%3E%3C/g%3E%3C/svg%3E%0A");
+  background-size: 10% auto;
+  background-position: center;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.fancy-button {
+  font-size: 0.85rem;
+  font-family: "Plus Jakarta Sans";
+  padding: 4px 6px;
+  width: 170px;
+  background-color: #35bcce;
+  border: none;
+  border-radius: 10px;
+  border: 8px outset #3ac0c5;
+  color: white;
+  font-weight: 700;
+  box-shadow: 5px 5px 15px rgba(30, 150, 180, 0.616);
+}
+.fancy-button > a {
+  text-decoration: none;
+  color: white;
+  font-family: "Plus Jakarta Sans";
+}
+
+.fancy-button:hover {
+  transform: scale(0.9);
+  transition: transform 0.06s ease-in-out;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+@media only screen and (max-width: 1200px) {
+  #scrollspyTop #hero .container .row {
+    gap: 30px;
+  }
+}
+#about {
+  text-align: center;
+  justify-content: flex-start;
+}
+#about div.main {
+  width: 100%;
+}
+#about div.main div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#about div.main #left {
+  width: 50%;
+}
+#about div.main #right {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+}
+#about div.main #right p {
+  align-self: self-start;
+}
+#about div.main #right button {
+  min-width: 100px;
+  height: auto;
+}
+
+header {
+  position: fixed;
+  background-color: darkgray;
+  opacity: 0.9;
+}
+
+#contact {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#contact .main {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#contact .main .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  height: 100%;
+  max-width: 30%;
+  min-width: 200px;
+}
+#contact .main .right {
+  min-width: 200px;
+}
+#contact .main .right form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+#contact .main .right form .form-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4%;
+  margin-bottom: 10px;
+}
+#contact .main .right form .form-group .input-group {
+  display: flex;
+  flex-direction: row;
+  gap: 4%;
+}
+#contact .main .right form .form-group .input-group #phone-number-code-list {
+  text-align: right;
+  width: 23%;
+}
+#contact .main .right form .form-group .input-group #phone-number-code-list option {
+  text-align: left;
+}
+#contact .main .right form .form-group .input-group input {
+  width: 73%;
+}
+#contact .main .right form .form-group label {
+  margin-right: 60%;
+  margin-bottom: 0;
+  min-width: 110px;
+}
+#contact .main .right form .form-group textarea {
+  max-height: 100px;
+}
+#contact .main .right form button {
+  margin-top: 5%;
+  width: 70%;
+  align-self: center;
+  height: 50px;
+}
+#contact #right-contact {
+  display: flex;
+  min-width: 10%;
+}
+
+footer {
+  width: 100vw;
+  background-color: white;
+}
+
+#gallery .album {
+  width: 100%;
+}
+#gallery .album .container .card .card-head {
+  position: relative;
+  width: 100%;
+}
+#gallery .album .container .card .card-head .thumbnail {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+#gallery .album .container .card .card-head .btn {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+#gallery .album .container .card .card-head .thumbnail:hover {
+  cursor: pointer;
+}
+#gallery .album .container .card .card-head:hover .thumbnail {
+  opacity: 0.3;
+}
+#gallery .album .container .card .card-head:hover .btn {
+  opacity: 1;
+}
+#gallery .album .container .col .card:has(.thumbnail:active) .thumbnail,
+#gallery .album .container .col .card:has(.btn:active) .thumbnail {
+  transform: scale(0.8);
+}/*# sourceMappingURL=main.css.map */

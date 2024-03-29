@@ -1,0 +1,2 @@
+R:\Documents\HackerU\GuyDugmaProject\ProjectsJs\project1\gameLogic.ts
+R:\Documents\HackerU\GuyDugmaProject\ProjectsJs\project1\script.ts

@@ -1,0 +1,12 @@
+{
+  "main": "./index",
+  "dependencies": {
+    "swagger-client": "^3.26.0",
+    "word-list": "^3.1.0",
+    "word-list-json": "^0.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "typescript": "^5.4.3"
+  }
+}

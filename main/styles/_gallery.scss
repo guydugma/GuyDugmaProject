@@ -1,0 +1,56 @@
+#gallery {
+    .album {
+        width: 100%;
+    }
+
+    .album .container .card {
+        .card-head {
+            position: relative;
+            width: 100%;
+
+            .thumbnail {
+                opacity: 1;
+                display: block;
+                width: 100%;
+                height: auto;
+                transition: .5s ease;
+                backface-visibility: hidden;
+            }
+
+            .btn {
+                transition: .5s ease;
+                opacity: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                text-align: center;
+                color: white;
+                font-size: 16px;
+                padding: 16px 32px;
+
+            }
+
+            .thumbnail:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .album .container .card .card-head:hover .thumbnail {
+        opacity: 0.3;
+    }
+
+    .album .container .card .card-head:hover .btn {
+        opacity: 1;
+    }
+
+    .album .container .col .card:has(.thumbnail:active),
+    .album .container .col .card:has(.btn:active) {
+
+        .thumbnail {
+            transform: scale(.8);
+        }
+    }
+}

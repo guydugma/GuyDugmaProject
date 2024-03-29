@@ -1,0 +1,83 @@
+#contact {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .main {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            height: 100%;
+            max-width: 30%;
+            min-width: 200px;
+
+        }
+
+        .right {
+            min-width: 200px;
+
+            form {
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+
+                .form-group {
+
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    gap: 4%;
+                    margin-bottom: 10px;
+
+                    .input-group {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 4%;
+
+                        #phone-number-code-list {
+                            text-align: right;
+                            width: 23%;
+
+                            option {
+                                text-align: left;
+                            }
+                        }
+
+                        input {
+                            width: 73%;
+                        }
+                    }
+
+                    label {
+                        margin-right: 60%;
+                        margin-bottom: 0;
+                        min-width: 110px;
+                    }
+
+                    textarea {
+                        max-height: 100px;
+                    }
+                }
+
+                button {
+                    margin-top: 5%;
+                    width: 70%;
+                    align-self: center;
+                    height: 50px;
+                }
+            }
+        }
+    }
+
+    #right-contact {
+        display: flex;
+        min-width: 10%;
+    }
+}

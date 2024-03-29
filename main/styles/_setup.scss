@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-size: contain;
+    padding-top: 100px;
+    color: black;
+
+
+
+    >* {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+
+    section {
+        width: 85vw;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 1);
+
+
+        .main {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            height: 70%;
+            width: 60%;
+            align-items: center;
+            border-radius: 1%;
+            padding: 20px;
+            gap: 10%;
+
+            >* {
+                padding: 10px;
+            }
+        }
+    }
+}

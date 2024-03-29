@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+.satisfy-regular {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.varela-round-regular {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  -webkit-user-select: none;
+  user-select: none;
+  background: linear-gradient(#281EFF, #2DFF8C);
+  background-attachment: fixed;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-width: 60%;
+
+    h1 {
+      font-size: 10rem;
+      text-shadow: 0px 0px 36px #00000087;
+      text-align: center;
+      line-height: 1.2;
+      flex-shrink: 1;
+      width: 60%;
+      align-self: center;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
+    form {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      gap: 21px;
+      align-items: flex-end;
+      flex-wrap: wrap;
+
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+      }
+
+      label {
+        text-align: right;
+      }
+
+      input {
+        border: 2px solid #FFFFFF;
+        background: #F6F6F624 0% 0% no-repeat padding-box;
+        font-size: 1.2em;
+        height: 50px;
+      }
+
+      #name-form input {
+        text-align: right;
+        direction: rtl;
+      }
+
+      button {
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: none;
+        color: #000;
+        font-size: 1em;
+        height: 50px;
+        min-width: 150px;
+        flex-grow: 1;
+      }
+
+      button:hover {
+        cursor: pointer;
+      }
+
+      button:active {
+        transform: scale(.9);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+
+  body {
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-size: contain;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 90px 21px;
+    margin-bottom: 5%;
+
+    .container {
+      position: absolute;
+      width: 88.5%;
+      height: 71%;
+      text-align: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+
+      h1 {
+        position: relative;
+        font-size: 3.75em;
+        height: 20%;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        height: 5%;
+        font-size: 1.1em;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 1em;
+        height: 25%;
+        margin-bottom: 20px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0;
+        font-size: 0.75em;
+
+        #buttonForm {
+          display: block;
+        }
+
+        input {
+          height: 36.11px;
+        }
+
+        button {
+          color: #2823FD;
+          height: 33px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

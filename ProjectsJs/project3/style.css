@@ -1,0 +1,94 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#hangman-diagram{
+  height: 40vh;
+}
+
+#below-hangman{
+  display: flex;
+  flex-direction: row;
+}
+
+#word-template{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+#word-template *{
+  font-size: 8rem;
+}
+
+#letter-rows{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.letterBtns{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 10px;
+
+  button{
+    min-width: 30px;
+    font-size: 1.5rem;
+  }
+}
+
+#hangman-diagram{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#head{
+  width: 200px;
+  height: auto;
+}
+
+#body-and-arms{
+  display: flex;
+  height: 30%;
+}
+
+#legs {
+  width: 100px;
+  flex-grow: 1;
+}
+
+#bottom{
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  justify-content: space-between;
+}
+
+#stats{
+  font-size: 2rem;
+}
+
+#reset-stats{
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+}
+
+#refresh{
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+}

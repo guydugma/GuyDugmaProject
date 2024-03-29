@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.heebo-regular {
+  font-family: "Heebo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.heebo-bold {
+  font-family: "Heebo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.heebo-boldest {
+  font-family: "Heebo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100vw;
+  gap: 180px;
+
+  .icon {
+    display: flex;
+    width: 95px;
+    height: 95px;
+    background-color: #FDBD03;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  .icon:hover {
+    cursor: pointer;
+  }
+
+  #phoneImgMobile {
+    display: none;
+  }
+
+  #right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+
+    #topRightBar {
+      background-color: #FDBD03;
+      height: 18px;
+      width: 50%;
+      align-self: flex-end;
+    }
+
+    #phoneImg {
+      display: flex;
+      align-self: flex-start;
+      z-index: -1;
+      padding-bottom: 20%;
+    }
+  }
+
+  #left-side {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+    align-items: flex-start;
+
+    >.icon {
+      margin: 65px 0 0 65px;
+    }
+
+    #form-section {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+      -webkit-user-select: none;
+      user-select: none;
+      align-items: flex-end;
+      align-self: flex-end;
+
+      h1 {
+        color: #FDBD03;
+        font-size: 4em;
+      }
+
+      P {
+        font-size: 1.25em;
+        width: 385px;
+      }
+
+      form {
+        width: 80%;
+        display: flex;
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 25px 50px 40px 150px 75px 50px;
+        align-items: end;
+        column-gap: 20px;
+
+        label {
+          padding-bottom: 2px;
+        }
+
+        input[title="Full Name"] {
+          grid-row: 2/3;
+          grid-column: 1/2;
+        }
+
+        input {
+          height: 100%;
+          background-color: #E5EEFF;
+          border: none;
+          border-bottom: 4px solid #FDBD03;
+          font-size: 1.2em;
+          padding: 5px;
+        }
+
+        input[type="email"] {
+          direction: ltr;
+        }
+
+        label[for="message"] {
+          grid-column: 2/3;
+        }
+
+        textarea {
+          grid-row: 4/5;
+          grid-column: 1/3;
+          background-color: #E5EEFF;
+          border: none;
+          border-bottom: 4px solid #FDBD03;
+          height: 150px;
+          font-size: 1.5em;
+          padding: 5px;
+        }
+
+        button {
+          grid-row: 6/7;
+          grid-column: 2/3;
+          height: 100%;
+          width: 166px;
+          background-color: #FDBD03;
+          color: black;
+          border: none;
+          font-size: 1.3em;
+        }
+
+        button:hover {
+          cursor: pointer;
+        }
+
+        button:active {
+          transform: scale(.9);
+        }
+      }
+    }
+
+    #contact {
+      display: flex;
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+      gap: 38px;
+      justify-content: flex-end;
+      width: 100%;
+
+      #icons {
+        padding: 0 55px;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 40px;
+      }
+
+      #bottom-left-bar {
+        align-self: flex-start;
+        background-color: #FDBD03;
+        height: 20px;
+        width: 100%;
+      }
+    }
+
+
+  }
+
+
+}
+
+@media only screen and (max-width: 480px) {
+
+  body {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    height: auto;
+
+
+    #topRightBar {
+      position: absolute;
+      width: 85vw;
+      height: 10px;
+      right: 0;
+    }
+
+    #icon {
+      display: none;
+    }
+
+    #phoneImg {
+      display: none;
+    }
+
+    #phoneImgMobile {
+      display: block;
+      width: 80px;
+      height: 120px;
+      margin-top: 60px;
+    }
+
+    #formSec {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      top: 0;
+      right: 0;
+      padding: 0 15px;
+      align-items: center;
+
+      h1 {
+        font-size: 2.5em;
+      }
+
+      p {
+        font-size: 1em;
+        width: auto;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        align-items: stretch;
+        margin-bottom: 150px;
+
+        label {
+          font-size: 0.8em;
+          margin-top: 15px;
+        }
+
+        input {
+          height: 38px;
+          font-size: 1em;
+        }
+
+        textarea {
+          height: 105px;
+          min-width: 90vw;
+          margin-bottom: 18px;
+          font-size: 1em;
+        }
+
+        button {
+          height: 38px;
+          width: 100%;
+          font-size: 1em;
+        }
+      }
+    }
+
+    #contact {
+      position: relative;
+      transform: scale(0.5);
+      height: 45px;
+      right: 0;
+      top: 0;
+      margin-bottom: 25px;
+    }
+
+    #bottomLeftBar {
+      position: relative;
+      width: 100vw;
+      height: 10px;
+      top: 0;
+      right: 0;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: darksalmon;
+  justify-content: center;
+}
+
+#game {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5%;
+  background-color: blue;
+}
+
+#statistics {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  margin-top: 50px;
+  text-align: center;
+
+  * {
+    margin: 5px;
+  }
+}
+
+#reset {
+  align-self: start;
+}
+
+.gameColumn {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  gap: 10px;
+  padding: 10px;
+}
+
+.gameSpace {
+  background-color: white;
+  height: 50px;
+  padding: 5px;
+  border-radius: 100%;
+  width: 50px;
+}

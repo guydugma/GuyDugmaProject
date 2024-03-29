@@ -1,0 +1,178 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.assistant-regular {
+  font-family: "Assistant", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.assistant-bold {
+  font-family: "Assistant", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+
+  #headSec {
+    -webkit-user-select: none;
+    user-select: none;
+    width: 100vw;
+    height: 88vh;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      width: 100vw;
+      z-index: -1;
+    }
+
+    #fullImg {
+      display: block;
+    }
+
+    #mobileImg {
+      display: none;
+    }
+
+    h1 {
+      color: #D3E10E;
+      font-size: 5.3em;
+      margin: 30vh 0 23px;
+    }
+
+    p {
+      color: white;
+      font-size: 1.25em;
+    }
+  }
+
+  #formSec {
+    width: 100vw;
+    text-align: center;
+
+
+    form {
+      display: grid;
+      grid-template-columns: 420px 420px 166px;
+      grid-template-rows: 1fr 50px;
+      direction: rtl;
+      grid-auto-flow: column;
+      align-content: end;
+      text-align: right;
+      justify-content: center;
+      column-gap: 38px;
+
+      label {
+        -webkit-user-select: none;
+        user-select: none;
+        color: #011560;
+      }
+
+      input {
+        background-color: #F6F6F6;
+        border: none;
+        border-bottom: 4px #D3E10E solid;
+      }
+
+      #emailForm {
+        direction: ltr;
+      }
+
+      button {
+        grid-row: 2/3;
+        background-color: #D3E10E;
+        color: black;
+        font-size: 1.3em;
+        border: none;
+      }
+
+      button:hover {
+        cursor: pointer;
+      }
+
+      button:active {
+        transform: scale(.9);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    height: 100%;
+
+    #headSec {
+      height: 46%;
+      margin-bottom: 12vh;
+
+      img {
+        position: relative;
+        z-index: unset;
+
+      }
+
+      #fullImg {
+        display: none;
+      }
+
+      #mobileImg {
+        display: block;
+      }
+
+      h1 {
+        display: none;
+
+      }
+
+      p {
+        display: none;
+      }
+    }
+
+    #formSec {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: center;
+
+      form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0 11%;
+        align-content: center;
+        align-items: flex-start;
+
+        label {
+          font-size: 0.8rem;
+        }
+
+        input {
+          background-color: #E5EEFF;
+          height: 34px;
+          width: 100%;
+          margin-bottom: 16px;
+        }
+
+        button {
+          margin-top: 5px;
+          height: 34px;
+          font-size: 0.9rem;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
